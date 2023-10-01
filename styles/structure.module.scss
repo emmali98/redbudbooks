@@ -1,0 +1,36 @@
+.header {
+    background-color: antiquewhite;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            margin: 20px;
+        }
+    }
+    
+}
+
+.footer {
+    background-color: rgb(43, 109, 109);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .newsletter {
+        grid-column: 1 / span 2;
+        margin: 50px;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            margin: 10px;
+        }
+
+        &.socials {
+            justify-content: flex-end;
+        }
+    }
+}

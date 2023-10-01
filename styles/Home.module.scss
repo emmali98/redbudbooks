@@ -1,0 +1,18 @@
+.opener {
+    height: 100vh;
+    background-color: beige;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        width: fit-content;
+        text-align: center;
+    }
+}
+
+.intro {
+    margin: 50px;
+}
+
