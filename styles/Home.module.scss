@@ -1,14 +1,25 @@
 .opener {
     height: 100vh;
-    background-color: beige;
+    background-image: url('../public/images/exterior-redbudbooks-bw.png');
+    background-position: center;
+
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
 
     .card {
-        width: fit-content;
+        position: relative;
         text-align: center;
+        padding: 50px;
+        background-color: rgb(223, 98, 56);
+        display: flex;
+    }
+
+    .logo {
+        width: 40%;
+        height: auto;
+        position: relative;
     }
 }
 

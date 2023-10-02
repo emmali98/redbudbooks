@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Layout from '../components/layout';
 import styles from '../styles/Home.module.scss';
 
@@ -10,10 +11,18 @@ export default function Home() {
             </Head>
             <section className={styles.opener}>
                 <div className={styles.card}>
-                    <p>Bloomington, IN</p>
-                    <h1>Redbud Books</h1>
-                    <h2>W Kirkwood Ave</h2>
-                    <p>Opening Fall 2023!</p>
+                    <div className={styles.logo}><Image
+                        src="/images/redbud logo red.png"
+                        alt="Redbud Books Logo"
+                        layout='fill'
+                        objectFit='contain'
+                    /></div>
+                    <div className={styles.text}>
+                        <p>Bloomington, IN</p>
+                        <h1>Redbud Books</h1>
+                        <h2>W Kirkwood Ave</h2>
+                        <p>Opening Fall 2023!</p>
+                    </div>
                 </div>
             </section>
             <section className={styles.intro}>

@@ -2,11 +2,12 @@ import Head from 'next/head';
 import Link from 'next/link';
 import structure from '../styles/structure.module.scss';
 
-export default function Layout({ children }) {
+export default function Layout({ children, styles }) {
   return (
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href={styles} />
         <meta
           name="description"
           content="Redbud Books, an independent bookstore"

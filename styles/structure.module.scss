@@ -1,9 +1,20 @@
+.header, .footer {
+    a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 .header {
-    background-color: antiquewhite;
+    background-color: black;
+    color: rgb(255, 154, 156);
 
     ul {
         display: flex;
-        justify-content: flex-end;
 
         li {
             margin: 20px;
