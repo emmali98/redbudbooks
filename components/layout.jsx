@@ -4,7 +4,7 @@ import structure from '../styles/structure.module.scss';
 
 export default function Layout({ children, styles }) {
   return (
-    <div id="redbud-books-layout">
+    <div className="redbud-books-layout">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href={styles} />

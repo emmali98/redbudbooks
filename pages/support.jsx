@@ -7,8 +7,9 @@ export default function Home() {
             <Head>
                 <title>Redbud Books | Support Us</title>
             </Head>
-            <section>
-                Here are ways to support us!
+            <section className='content'>
+                <h1>Support Us</h1>
+                <p>Here are some ways to support us!</p>
             </section>
         </Layout>
     )

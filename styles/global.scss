@@ -1,18 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Walter+Turncoat&display=swap');
 
-#redbud-books-layout {
+.redbud-books-layout {
     background-color: white;
 	margin-top: 80px; // height of header
 
+	#redbudbooks {
+		min-height: calc(100vh - 80px);
+	}
+
 	h1 {
 		font-family: 'Walter Turncoat', sans-serif;
+		font-size: 28px;
+		line-height: 1.2em;
+		margin: 5px 0;
 	}
 
 	h2, h3, h4, h5, h6, p, div {
 		font-family: 'Alegreya', serif;
 		font-size: 18px;
+		line-height: 1.4em;
 	}
 
+	a {
+		color: rgb(72, 131, 82);
+		&:hover {
+			color: rgb(118, 206, 176);
+		}
+	}
+
+	.content {
+		padding: 5vw;
+	}
 }
 
 img {
