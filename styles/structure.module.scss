@@ -1,4 +1,7 @@
 .header, .footer {
+    font-family: 'Alegreya', serif;
+    font-size: 18px;
+
     a {
         text-decoration: none;
         color: white;
@@ -10,14 +13,21 @@
 }
 
 .header {
-    background-color: black;
+    background-color: rgb(43, 109, 109);
     color: rgb(255, 154, 156);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
 
     ul {
         display: flex;
+        height: 100%;
+        align-items: center;
 
-        li {
-            margin: 20px;
+        a {
+            padding: 2vw;
         }
     }
     
@@ -25,23 +35,25 @@
 
 .footer {
     background-color: rgb(43, 109, 109);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vw;
+    padding: 5vw; 
 
     .newsletter {
-        grid-column: 1 / span 2;
-        margin: 50px;
+        width: 100%;
+        display: none; // temporary until I get the function working
     }
 
-    ul {
-        display: flex;
+    .address {
+        color: rgb(221, 233, 206);
+    }
 
-        li {
-            margin: 10px;
-        }
-
-        &.socials {
-            justify-content: flex-end;
+    li {
+        a {
+            padding: 5px;
+            display: block;
         }
     }
 }

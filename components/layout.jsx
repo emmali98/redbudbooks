@@ -4,7 +4,7 @@ import structure from '../styles/structure.module.scss';
 
 export default function Layout({ children, styles }) {
   return (
-    <div>
+    <div id="redbud-books-layout">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href={styles} />
@@ -37,6 +37,12 @@ export default function Layout({ children, styles }) {
             <li><Link href="https://www.instagram.com/redbudbooks/">Instagram</Link></li>
             <li><Link href="/">Paypal (TBD)</Link></li>
         </ul>
+        <div className={structure.address}>
+          <p>Redbud Books</p>
+          <p>W Kirkwood Ave</p>
+          <p>Bloomington, IN</p>
+          <p>[email address]</p>
+        </div>
       </footer>
     </div>
   );

@@ -8,22 +8,38 @@
     align-items: center;
     justify-content: center;
 
+    margin-top: -80px; // undoing correction for fullscreen image
+
     .card {
         position: relative;
         text-align: center;
-        padding: 50px;
+        padding: 20px;
         background-color: rgb(223, 98, 56);
-        display: flex;
+        width: 20vw;
+        max-width: 300px;
+        min-width: 100px;
+    }
+
+    .text {
+        font-size: 18px;
+        line-height: 1.1em;
+        margin-bottom: 20px;
+
+        h1 {
+            font-size: 28px;
+            line-height: 1.2em;
+            margin: 5px 0;
+        }
     }
 
     .logo {
-        width: 40%;
-        height: auto;
         position: relative;
+        width: 75%;
+        margin: auto;
     }
 }
 
 .intro {
-    margin: 50px;
+    margin: 5vw;
 }
 
